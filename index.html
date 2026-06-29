@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Information</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#0f172a,#4f46e5);color:#fff;overflow:hidden}
+.container{display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+.card{background:rgba(255,255,255,.12);backdrop-filter:blur(12px);padding:40px;border-radius:25px;max-width:750px;text-align:center;animation:fade 1.5s}
+h1{font-size:3rem;margin-bottom:5px}
+.type{border-right:3px solid #fff;white-space:nowrap;overflow:hidden;width:0;animation:typing 4s steps(38,end) forwards,blink .8s infinite}
+.skills span{display:inline-block;background:rgba(255,255,255,.18);padding:10px 16px;margin:8px;border-radius:20px;transition:.3s}
+.skills span:hover{transform:translateY(-5px)}
+.circle{position:absolute;border-radius:50%;background:rgba(255,255,255,.08);animation:float 10s infinite}
+.c1{width:250px;height:250px;top:5%;left:5%}
+.c2{width:350px;height:350px;bottom:5%;right:5%}
+@keyframes fade{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes float{50%{transform:translateY(-35px)}}
+@keyframes typing{to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+</style>
+</head>
+<body>
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="container">
+<div class="card">
+<h1>Shantanu Tambe</h1>
+<h3>My Information</h3>
+<p class="type">Computer Science Student • Technology Enthusiast • Future Developer</p>
+<p>Hello! I'm <strong>Shantanu Tambe</strong>, a Computer Science student passionate about programming, web development, and learning new technologies that solve real-world problems.</p>
+<div class="skills">
+<span>💻 Programming</span>
+<span>🌐 Web Development</span>
+<span>🧠 Problem Solving</span>
+<span>🚀 Technology</span>
+</div>
+</div>
+</div>
+</body>
+</html>
